@@ -1,0 +1,1 @@
+ตัว client ไว้ต่อ olama

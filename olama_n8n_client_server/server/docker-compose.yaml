@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    networks:
+      - demo
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_storage:/root/.ollama
+
+  init-ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-pull-llama
+    networks:
+      - demo
+    volumes:
+      - ollama_storage:/root/.ollama
+    entrypoint: /bin/sh
+    environment:
+      - OLLAMA_HOST=ollama:11434
+    command:
+      - "-c"
+      - "sleep 3; ollama pull bagnacan/llama3_instruct"
+
+
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    environment:
+      - N8N_SECURE_COOKIE=false
+    ports:
+      - "5678:5678"
+    networks:
+      - n8n_network
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+networks:
+  demo:
+  n8n_network:
+    driver: bridge
+
+volumes:
+  ollama_storage:
+  n8n_data:
+  

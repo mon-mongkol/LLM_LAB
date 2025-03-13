@@ -1,0 +1,6 @@
+fastapi
+huggingface_hub
+uvicorn
+langchain-community
+langchain
+llama-cpp-python

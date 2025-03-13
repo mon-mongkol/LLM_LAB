@@ -1,0 +1,1 @@
+#ตัว server ไว้เปิด server olama
