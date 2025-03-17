@@ -1,5 +1,5 @@
 
-- โหลดไฟล์ checkpoint แล้วแตกไฟลโฟลเดอร์ลงในโปรเจกครับ ขนาดข้อมูลเทรนด้วยชุดข้อมูล 4000 กว่าข้อมูล https://drive.google.com/drive/folders/1DtFUPmmfcImg0QX1NlqTj2Uy7se6qQrS?usp=sharing
+- โหลดไฟล์ checkpoint แล้วแตกไฟล์โฟลเดอร์ลงในโปรเจกครับ ขนาดข้อมูลเทรนด้วยชุดข้อมูล 4000 กว่าข้อมูล https://drive.google.com/drive/folders/1DtFUPmmfcImg0QX1NlqTj2Uy7se6qQrS?usp=sharing
 
 -ใช้โมเดล https://huggingface.co/google-bert/bert-base-multilingual-cased
 
