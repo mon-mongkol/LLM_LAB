@@ -1,7 +1,12 @@
+
 - โหลดไฟล์ checkpoint แล้วแตกไฟล์โฟลเดอร์ลงในโปรเจกครับ ขนาดข้อมูลเทรนด้วยชุดข้อมูล 4000 กว่าข้อมูล https://drive.google.com/drive/folders/1DtFUPmmfcImg0QX1NlqTj2Uy7se6qQrS?usp=sharing
 
+-ใช้โมเดล https://huggingface.co/google-bert/bert-base-multilingual-cased
+
+- inference โมเดล ใช้ docker compose  จะมี fastapi ไปหน้า html page
+
 - http://0.0.0.0:6006/  tensorboard
-- http://0.0.0.0:5555/ เป็นตัวโมเดลที่ใช้แยกหัวข้อสนทนา ใช้โมเดล https://huggingface.co/google-bert/bert-base-multilingual-cased
+- http://0.0.0.0:5555/ เป็น fastapi ไปหน้า html page 
 
 หัวข้อสนทนาใช้เกณฑ์ในการแยก
 - การสนับสนุนลูกค้า (Customer Support) เป็นหมวดหมู่กว้างที่ครอบคลุมบริการหลายประเภท รวมถึงปัญหาการชำระเงิน และการสนับสนุนด้านเทคนิค 
