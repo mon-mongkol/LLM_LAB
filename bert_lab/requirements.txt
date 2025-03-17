@@ -1,0 +1,6 @@
+datasets
+fastapi
+transformers
+pandas
+uvicorn
+tf-keras
